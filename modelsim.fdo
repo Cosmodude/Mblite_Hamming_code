@@ -1,0 +1,47 @@
+vlib extras
+
+
+vcom -explicit  -93 -work extras ../src/hw/mem/Extras/sizing.vhdl
+vcom -explicit  -93 -work extras ../src/hw/mem/Extras/hamming_edac.vhdl
+
+
+
+vlib mblite
+
+vcom -explicit  -93 -work mblite ../src/hw/mblite/std_Pkg.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/config_Pkg.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/core_Pkg.vhd
+
+vcom -explicit  -93 -work mblite ../src/hw/mblite/mem.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/sram.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/fetch.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/sram_4en.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/dsram.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/gprf.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/execute.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/decode.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/core_address_decoder.vhd
+vcom -explicit  -93 -work mblite ../src/hw/mblite/core.vhd
+
+vlib work
+
+vcom -explicit  -93 -work work ../src/hw/utils/std_logic_1164_additions.vhd
+
+vcom -explicit  -93 -work work ../src/hw/periph/periph_utils.vhd
+vcom -explicit  -93 -work work ../src/hw/periph/io_unit.vhd
+vcom -explicit  -93 -work work ../src/hw/periph/sim_stdio.vhd
+vcom -explicit  -93 -work work ../src/hw/periph/interrupt_controller.vhd
+vcom -explicit  -93 -work work ../src/hw/periph/rtc.vhd
+vcom -explicit  -93 -work work ../src/hw/periph/master_peripherals.vhd
+vcom -explicit  -93 -work work ../src/hw/utils/fifo.vhd
+
+vcom -explicit  -93 -work work ../src/hw/mem/lram_to_mem.vhd
+vcom -explicit  -93 -work work ../src/hw/mblite_top.vhd
+vcom -explicit  -93 -work work ../src/hw/sim_top.vhd
+
+
+
+vsim -voptargs="+acc" -t 1ps work.sim_top
+
+
+

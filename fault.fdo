@@ -1,0 +1,34 @@
+
+set r  [expr {round(rand()*12-5)}]
+set j  [expr {round(rand()*16383)}]
+
+
+while {1}
+{
+set t 0
+while{$t<25000}
+{incr t}
+set r int(rand()*31)
+force -deposit sim:/sim_top/mb0/ram/imem_in_o.dat_i(r) 1 100
+set t 0
+}
+
+set i 0;
+while {$i<220} {
+run 1ms
+set r  [expr {round(rand()*7)}]
+set r 0
+force -deposit sim:/sim_top/mb0/ram/ham3(0)($r) 1 0
+incr i
+}
+
+set w_new [string replace $w $r [expr $r+1] 1]
+
+
+
+set addr [expr round(rand()*16383)]
+set w [mem display -noaddress -dataradix binary sim:/sim_top/mb0/ram/ham3($addr)]
+set r [expr round(rand()*7)]
+set bit [expr rand()>0.5]
+set w_new [string replace $w $r [expr $r+1] $bit
+mem load -filldata w_new -dataradix binary sim:/sim_top/mb0/ram/ram3($addr)
