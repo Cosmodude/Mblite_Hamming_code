@@ -1,0 +1,31 @@
+NET "sys_clk_i" LOC = "AH15" | IOSTANDARD = LVCMOS33;
+NET "sys_clk_i" PERIOD = 10.0ns HIGH 50%;
+
+#NET  CLK_100MHZ_FPGA      LOC="AH15"; 
+#NET  CLK_27MHZ_FPGA       LOC="AG18";  # Bank 4, Vcco=3.3V, No DCI      
+#NET  CLK_33MHZ_FPGA       LOC="AH17";  # Bank 4, Vcco=3.3V, No DCI      
+#NET  CLK_N           LOC="K19";   # Bank 3, Vcco=2.5V, No DCI      
+#NET  CLK_P           LOC="L19";   # Bank 3, Vcco=2.5V, No DCI 
+
+NET "sys_rx_i" LOC = "AG15"| IOSTANDARD = LVTTL; #rxd1
+NET "sys_tx_o" LOC = "AG20"| IOSTANDARD = LVTTL; #txd1
+NET "sys_rst_i" LOC = "E9" | IOSTANDARD = LVTTL;
+#NET "sys_int_i" LOC = "U8" | IOSTANDARD = LVTTL;
+#NET "gpio_o(0)" LOC = "H18" | IOSTANDARD = LVTTL;
+#NET "gpio_o(1)" LOC = "AE24" | IOSTANDARD = LVTTL;
+#NET "gpio_o(2)" LOC = "G15" | IOSTANDARD = LVTTL;
+#NET "gpio_o(3)" LOC = "AD26" | IOSTANDARD = LVTTL;
+
+#NET  GPIO_LED_0           LOC="H18";   # Bank 3, Vcco=2.5V, No DCI
+#NET  GPIO_LED_1           LOC="L18";   # Bank 3, Vcco=2.5V, No DCI
+#NET  GPIO_LED_2           LOC="G15";   # Bank 3, Vcco=2.5V, No DCI
+#NET  GPIO_LED_3           LOC="AD26";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+#NET  GPIO_LED_4           LOC="G16";   # Bank 3, Vcco=2.5V, No DCI
+#NET  GPIO_LED_5           LOC="AD25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+#NET  GPIO_LED_6           LOC="AD24";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+#NET  GPIO_LED_7           LOC="AE24";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+#NET  GPIO_LED_C           LOC="E8";    # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
+#NET  GPIO_LED_E           LOC="AG23";  # Bank 2, Vcco=3.3V
+#NET  GPIO_LED_N           LOC="AF13";  # Bank 2, Vcco=3.3V
+#NET  GPIO_LED_S           LOC="AG12";  # Bank 2, Vcco=3.3V
+#NET  GPIO_LED_W           LOC="AF23";  # Bank 2, Vcco=3.3V
