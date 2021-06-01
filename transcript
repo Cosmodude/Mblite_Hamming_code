@@ -1,0 +1,492 @@
+# //  Questa Sim-64
+# //  Version 10.4e linux_x86_64 Apr  8 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do modelsim.fdo
+# ** Warning: (vlib-34) Library already exists at "extras".
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:57 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work extras ../src/hw/mem/Extras/sizing.vhdl 
+# -- Loading package STANDARD
+# -- Compiling package sizing
+# -- Compiling package body sizing
+# -- Loading package sizing
+# End time: 18:21:57 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:57 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work extras ../src/hw/mem/Extras/hamming_edac.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package hamming_edac
+# -- Loading package sizing
+# -- Compiling package body hamming_edac
+# -- Loading package hamming_edac
+# End time: 18:21:57 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "mblite".
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:57 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/std_Pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package std_Pkg
+# -- Compiling package body std_Pkg
+# -- Loading package std_Pkg
+# End time: 18:21:57 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:57 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/config_Pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package config_Pkg
+# End time: 18:21:57 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:57 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/core_Pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Compiling package core_Pkg
+# -- Compiling package body core_Pkg
+# -- Loading package core_Pkg
+# End time: 18:21:57 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:57 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity mem
+# -- Compiling architecture arch of mem
+# End time: 18:21:57 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/sram.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Compiling entity sram
+# -- Compiling architecture arch of sram
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/fetch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity fetch
+# -- Compiling architecture arch of fetch
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/sram_4en.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Compiling entity sram_4en
+# -- Compiling architecture arch of sram_4en
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/dsram.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Compiling entity dsram
+# -- Compiling architecture arch of dsram
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/gprf.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity gprf
+# -- Compiling architecture arch of gprf
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/execute.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity execute
+# -- Compiling architecture arch of execute
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/decode.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity decode
+# -- Compiling architecture arch of decode
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/core_address_decoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity core_address_decoder
+# -- Compiling architecture arch of core_address_decoder
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work mblite ../src/hw/mblite/core.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity core
+# -- Compiling architecture arch of core
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/utils/std_logic_1164_additions.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_1164_additions
+# -- Compiling package body std_logic_1164_additions
+# -- Loading package std_logic_1164_additions
+# ** Warning: ../src/hw/utils/std_logic_1164_additions.vhd(1012): (vcom-1246) Range 2 to 1 is null.
+# End time: 18:21:58 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:58 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/periph/periph_utils.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity synchroniser
+# -- Compiling architecture Behaviour of synchroniser
+# -- Compiling entity Counter
+# -- Compiling architecture Behaviour of Counter
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:59 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/periph/io_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity IO_unit
+# -- Compiling architecture Behaviour of IO_unit
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:59 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/periph/sim_stdio.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity Sim_StdIO
+# -- Compiling architecture arch of Sim_StdIO
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:59 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/periph/interrupt_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_interrupt
+# -- Compiling architecture Behavioral of control_interrupt
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:59 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/periph/rtc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity RTC_counter
+# -- Compiling architecture Behavioral of rtc_counter
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:59 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/periph/master_peripherals.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity Master_peripherals
+# -- Compiling architecture Behavioral of Master_peripherals
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:59 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/utils/fifo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FIFO_LOGIC
+# -- Compiling architecture RTL of FIFO_LOGIC
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Compiling entity FIFO
+# -- Compiling architecture FIFO_TOP of FIFO
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:59 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/mem/lram_to_mem.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_1164_additions
+# -- Loading package config_Pkg
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Loading package hamming_edac
+# -- Loading package secded_edac
+# -- Compiling entity lram_to_mem
+# -- Compiling architecture arch of lram_to_mem
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:59 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/mblite_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity mblite_top
+# -- Compiling architecture arch of mblite_top
+# -- Loading entity Master_peripherals
+# -- Loading package std_logic_1164_additions
+# -- Loading package hamming_edac
+# -- Loading package secded_edac
+# -- Loading entity lram_to_mem
+# -- Loading entity IO_unit
+# -- Loading entity core_address_decoder
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 10.4e Compiler 2016.04 Apr  8 2016
+# Start time: 18:21:59 on May 30,2021
+# vcom -reportprogress 300 -explicit -93 -work work ../src/hw/sim_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package config_Pkg
+# -- Loading package NUMERIC_STD
+# -- Loading package std_Pkg
+# -- Loading package core_Pkg
+# -- Compiling entity sim_top
+# -- Compiling architecture Behavioral of sim_top
+# -- Loading entity mblite_top
+# End time: 18:21:59 on May 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps work.sim_top 
+# Start time: 18:21:59 on May 30,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt5
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading mblite.config_pkg
+# Loading ieee.numeric_std(body)
+# Loading mblite.std_pkg(body)
+# Loading mblite.core_pkg(body)
+# Loading work.sim_top(behavioral)#1
+# Loading work.std_logic_1164_additions(body)
+# Loading extras.sizing(body)
+# Loading extras.hamming_edac(body)
+# Loading extras.parity_ops(body)
+# Loading extras.secded_edac(body)
+# Loading work.mblite_top(arch)#1
+# Loading work.master_peripherals(behavioral)#1
+# Loading work.rtc_counter(behavioral)#1
+# Loading work.counter(behaviour)#1
+# Loading work.counter(behaviour)#2
+# Loading work.control_interrupt(behavioral)#1
+# Loading work.lram_to_mem(arch)#1
+# Loading work.io_unit(behaviour)#1
+# Loading work.sim_stdio(arch)#1
+# Loading work.fifo(fifo_top)#1
+# Loading work.fifo_logic(rtl)#1
+# Loading mblite.sram(arch)#1
+# Loading mblite.core_address_decoder(arch)#1
+# Loading mblite.core(arch)#1
+# Loading mblite.fetch(arch)#1
+# Loading mblite.decode(arch)#1
+# Loading mblite.gprf(arch)#1
+# Loading mblite.dsram(arch)#1
+# Loading mblite.execute(arch)#1
+# Loading mblite.mem(arch)#1
+add wave -position insertpoint  \
+sim:/sim_top/mb0/ram/clk_i
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# ** Error: Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wl# Running Perm test
+# Running QSort test
+# Running Queen test
+# Running Sieve test
+# Bubble time: 2055us
+# Hanoi time: 3us
+# Matmul time: 1526us
+# Perm time: 52us
+# QSort time: 37us
+# Queen time: 4234us
+# Sieve time: 3373us
+# End time: 15:26:06 on May 31,2021, Elapsed time: 24:51:49
+# Errors: 0, Warnings: 0
+
+do crash.do
+# 0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_top/mb0/io/Tx_FIFO/FL
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /sim_top/mb0/io/Tx_FIFO/FL
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /sim_top/mb0/io/Tx_FIFO/FL
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /sim_top/mb0/io/Tx_FIFO/FL
+# ** Note: Simulation memory: starting read from init file...
+#    Time: 10 ns  Iteration: 0  Instance: /sim_top/mb0/ram
+# ** Note: Simulation memory: init completed
+#    Time: 10 ns  Iteration: 0  Instance: /sim_top/mb0/ram
+# Stanford integer test
+# Running Bubble test
+# Running Hanoi test
+# Running MatMul test
+# Running Perm test
+# Running QSort test
+# Running Queen test
+# Running Sieve test
+# Bubble time: 2055us
+# Hanoi time: 3us
+# Matmul time: 1526us
+# Perm time: 52us
+# QSort time: 37us
+# Queen time: 4234us
+# Sieve time: 3373us
